@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "TILApp",
+    name: "CRBotServer",
     dependencies: [
         .package(url: "https://github.com/vapor/vapor.git",
                  from: "3.0.0"),

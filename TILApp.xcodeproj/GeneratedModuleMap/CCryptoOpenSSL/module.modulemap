@@ -1,4 +1,0 @@
-module CCryptoOpenSSL {
-    umbrella "/Users/mohammadilkhani/CRBotServer/.build/checkouts/crypto/Sources/CCryptoOpenSSL/include"
-    export *
-}

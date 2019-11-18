@@ -1,18 +1,20 @@
 
+import Foundation
 import Vapor
 import FluentPostgreSQL
 
-final class Acronym: Codable {
-  var id: Int?
-  var short: String
-  var long: String
+final class User: Codable {
+  var id: UUID?
+  var apiKey: String
+  var secretKey: String
     
-  init(short: String, long: String) {
-    self.short = short
-    self.long = long
+  init(apiKey: String, secretKey: String) {
+    self.apiKey = apiKey
+    self.secretKey = secretKey
   }
 }
 
-extension Acronym: PostgreSQLModel {}
-extension Acronym: Migration {}
-extension Acronym: Content {}
+extension User: PostgreSQLUUIDModel {}
+extension User: Content {}
+extension User: Migration {}
+extension User: Parameter {}

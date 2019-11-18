@@ -1,4 +1,0 @@
-module CNIOOpenSSL {
-    umbrella "/Users/mohammadilkhani/CRBotServer/.build/checkouts/swift-nio-ssl/Sources/CNIOOpenSSL/include"
-    export *
-}
